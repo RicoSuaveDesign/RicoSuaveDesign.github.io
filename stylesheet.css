@@ -1,0 +1,19 @@
+/* For webdev, day 2*/
+body
+{
+	background-color: #ffcccc;
+	font-family: Calibri;
+}
+center div
+{
+	height: 200px;
+	width: 800px;
+	background-color: #ffdddd;
+	border-radius: 10px;
+	
+}
+center p
+{
+	color: #aa00aa;
+	
+}
