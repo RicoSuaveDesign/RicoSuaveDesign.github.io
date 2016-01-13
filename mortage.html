@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<title>FREE MORTGAGE CALCULATOR</title> 
+	 <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="mortage.css"> 
+</head>
+<body> <!-- Pink is a very professional color, and if you disagree you can get right out of my face -->
+<div class="container">
+<h3>World's Best Mortgage Calculator</h3>
+<form id="Inputs">
+	<form>
+  <div class="form-group">
+    <label for="PrincipalInput">Principal (Do not include commas)</label>
+    <input type="principal" class="form-control" id="Principal" placeholder="Enter the principal here">
+  </div>
+  <div class="form-group">
+    <label for="AnnInterestRateInput">Annual Interest Rate</label>
+    <input type="interestRate" class="form-control" id="AnnualInterestRate" placeholder="Enter the annual interest rate here">
+  </div>
+<div class="form-group">						
+<label for="Years">How many years will it take to pay off? </label> 
+	
+<select class="form-control" id="yearselect"> 
+<option value="15">15 years</option> 
+<option value="20">20 years</option> 
+<option value="30">30 years</option> 
+</select> <br/>
+</div>
+<div id="whichOnes">
+<label for="monthsbeginning">When would you like to begin viewing?</label>
+<select class="form-control" id="monthBeginSelect"> 
+</select> <br/>
+<label for="monthsend">When would you like to stop viewing?</label>
+<select class="form-control" id="monthEndSelect">
+</select>
+</div>
+ </form><br/>
+<button type="button" id="calculateButton" class="btn btn-success btn-lg btn-block">
+Calculate Mortgage
+</button>
+<script src="mortage.js"></script>
+
+<div id="results">
+
+</div>
+</div>
+
+
+		<script>
+		
+			$(document).ready(function() {
+				console.log("DOM loaded");
+			});
+
+		</script>
+</body>
+</html>
