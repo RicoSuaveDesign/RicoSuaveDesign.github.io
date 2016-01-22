@@ -89,7 +89,7 @@ $('#get').on('click', function () {
 					})
                     
                     
-				var fuckTHISSHIT = postRef.child(newTopicName).set({'topic': newTopicName,'originalpost': miaou, 'replies': {1: 'thanks for posting!'}});
+				var fuckTHISSHIT = postRef.child(newTopicName).set({'originalpost': miaou, 'replies': {1: 'thanks for posting!'}});
                    
 					
 						$(document).on("click", friendlyCounter, function(reply) {
